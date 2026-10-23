@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'swathikarthik/test-dev:latest'
+        DOCKER_IMAGE = 'anush0605/test-dev:latest'
     }
 
     stages {
 
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/swathis10/scroll-web.git'
+                git branch: 'master', url: 'https://github.com/aanush734-netizen/scroll-web-project.git'
             }
         }
 
